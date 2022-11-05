@@ -7,6 +7,7 @@ public class Hello {
     {
       name = argv[0];
     }
-    System.out.println( "Hello, " + argv[0] + "!" );
+    Greeter greeter = new Greeter(name);
+    System.out.println(greeter.greet());
   }
 }
