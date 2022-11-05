@@ -1,12 +1,11 @@
-public class Hello {
-  public static void main( String argv[] ) {
-    // Default is "World"
-    // Author: Jim Weirich ( jim@somewhere.com )
-    String name = "World";
-    if ( argv.length != 0 )
-    {
-      name = argv[0];
-    }
-    System.out.println( "Hello, " + argv[0] + "!" );
+import import java.util.Scanner;
+public class Hello
+{
+  public static void main( String argv[] )
+  {
+    System.out.println("What's your name");
+    Scanner in = new Scanner(System.in);
+    String my_name = in.nextLine();
+    System.out.println( "Hello, " + my_name + "!" );
   }
 }
